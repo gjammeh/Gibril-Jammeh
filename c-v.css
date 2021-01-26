@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+main {
+    /* background-color: gray; */
+    margin: auto;
+    border: 1px solid black;
+    width: 60%;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+header {
+    color: rgb(230, 230, 236);
+    background-image: linear-gradient(to right bottom, rgba(204, 98, 98, 0.7), rgba(69, 69, 158, 0.5)), url("lego.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+}
+.head {
+    padding-top: auto;
+    margin: auto;
+}
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 175px;
+    vertical-align: middle;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 40%;
+    padding: 10px;
+    background: rgb(202, 197, 197);
+    color: black;  
+}
+.right {
+    background-color: gray;
+    vertical-align: top;
+    width: 60%;
+    padding: 10px;
+    color: black;
+}
+
+hr {
+    width: 35px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+.profile, .contact, .education, .skills, .work, .reference {
+    margin-top: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+}
+@media (max-width: 500px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .h1 {
+      margin-bottom: 10px;
+    }
+    header ul {
+      flex-direction: column;
+      flex: 1;
+    }
+    header li {
+      margin-bottom: 8px;
+      border-bottom: 1px solid gold;
+    }
+    main {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    main div {
+      margin-bottom: 30px;
+    }
+  }
